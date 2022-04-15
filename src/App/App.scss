@@ -1,0 +1,20 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/reset';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+
+body {
+  font-family: $font-family-primary;
+  background: $grey-light;
+  line-height: $line-height-base;
+}
+
+.app-container {
+  max-width: $app-container-width;
+  margin: auto;
+  background: $white;
+  padding: $spacing-32;
+
+  &__control {
+    margin-bottom: $spacing-32;
+  }
+}

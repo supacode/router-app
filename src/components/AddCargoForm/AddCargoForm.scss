@@ -1,4 +1,87 @@
 @import '../../assets/scss/variables';
 
 .form {
+  display: flex;
+  animation: slideUp 0.4s ease-out;
+  border: 1px solid $grey-light;
+  border-width: 1px 0;
+  padding-bottom: $spacing-16;
+  flex-direction: column;
+  margin: $spacing-32 0;
+
+  &__title {
+    color: $grey;
+    margin-bottom: $spacing-16;
+    margin-top: -$spacing-14;
+    font-weight: $font-weight-bold;
+    background: $white;
+    width: max-content;
+    padding-right: $spacing-16;
+  }
+
+  &__form-group {
+    display: grid;
+    margin-bottom: $spacing-24;
+    grid-template-rows: auto;
+    gap: $spacing-12 $spacing-16;
+
+    @media screen and (min-width: $screen-lg-min) {
+      gap: $spacing-48;
+    }
+
+    &--first-row {
+      grid-template-columns: repeat(1, 1fr);
+
+      @media screen and (min-width: $screen-md-min) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (min-width: $screen-lg-min) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &--second-row {
+      grid-template-columns: repeat(1, 1fr);
+
+      @media screen and (min-width: $screen-md-min) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media screen and (min-width: $screen-lg-min) {
+        grid-template-columns: repeat(2, 1fr) 1px repeat(3, 1fr);
+      }
+    }
+  }
+
+  &__separator {
+    background: $grey-light;
+    width: 1px;
+    display: none;
+
+    @media screen and (min-width: $screen-lg-min) {
+      display: block;
+    }
+  }
+
+  &__form-control {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    background: $white;
+    margin-bottom: -$spacing-32;
+  }
+
+  &__btn {
+    margin-left: $spacing-32;
+    font-weight: $font-weight-bold;
+    color: $grey;
+    font-size: $spacing-16;
+    padding: $spacing-4 0;
+  }
+
+  &__cta {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
+  }
 }
