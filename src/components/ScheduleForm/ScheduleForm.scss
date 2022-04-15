@@ -1,0 +1,47 @@
+@import '../../assets/scss/variables';
+
+.schedule-form {
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: $font-weight-bold;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: $screen-md-min) {
+      flex-direction: row;
+      // background: red;
+    }
+
+    .input {
+      width: 100%;
+      margin-bottom: $spacing-12;
+
+      @media screen and (min-width: $screen-md-min) {
+        width: 50%;
+        margin-left: $spacing-32;
+      }
+    }
+
+    .arrival-date-input {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__control {
+    display: flex;
+    justify-content: flex-end;
+
+    .button {
+      margin-left: $spacing-16;
+    }
+  }
+}

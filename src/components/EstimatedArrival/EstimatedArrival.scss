@@ -1,0 +1,21 @@
+@import '../../assets/scss/variables';
+
+.arrival {
+  width: 100%;
+
+  &__title {
+    font-weight: $font-weight-bold;
+    color: $grey-medium;
+    line-height: $line-height-2;
+  }
+
+  &__date,
+  &__time {
+    font-weight: $font-weight-bold;
+    line-height: $line-height-2;
+  }
+
+  &__time {
+    color: $grey;
+  }
+}
