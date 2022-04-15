@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables';
+
+.input {
+  font-size: inherit;
+
+  &__input {
+    padding: $spacing-14;
+    border-radius: 3px;
+    width: 100%;
+    outline: 0;
+  }
+
+  &__input-wrapper {
+    border: 1px solid $grey-light;
+    display: flex;
+    align-items: center;
+
+    &:focus-within {
+      outline: 1px solid;
+    }
+  }
+
+  &__label {
+    line-height: 2;
+  }
+
+  &__append,
+  &__prepend {
+    color: $grey;
+    padding: 0 $spacing-8;
+  }
+
+  &__append {
+    margin-right: $spacing-8;
+  }
+  &__prepend {
+    margin-left: $spacing-8;
+  }
+}

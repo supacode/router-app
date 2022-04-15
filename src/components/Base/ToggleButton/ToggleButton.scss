@@ -1,0 +1,15 @@
+@import '../../../assets/scss/variables';
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    color: $accent-color;
+    margin-top: $spacing-8;
+  }
+
+  &__btn {
+    color: $accent-color;
+  }
+}

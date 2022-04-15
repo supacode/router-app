@@ -1,0 +1,14 @@
+@import '../../../assets/scss/variables';
+
+.select {
+  &__label {
+    line-height: 2;
+  }
+
+  &__select {
+    width: 100%;
+    border: 1px solid $grey-light;
+    padding: $spacing-8;
+    font-size: inherit;
+  }
+}
