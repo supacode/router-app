@@ -18,7 +18,19 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   disabled,
 }) => {
-  return <></>;
+  return (
+    <button
+      disabled={disabled}
+      onClick={onClick}
+      type={type}
+      className={cn('button', {
+        [`button__${variant}`]: variant,
+        [`${className}`]: className,
+      })}
+    >
+      {text}
+    </button>
+  );
 };
 
 Button.defaultProps = {
