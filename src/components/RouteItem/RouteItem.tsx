@@ -95,7 +95,11 @@ export const RouteItem: React.FC<RouteItemProps> = ({
             <EstimatedArrival schedule={schedule} />
 
             {canUpdateSchedule && (
-              <Button onClick={() => setIsEditingSchedule(true)} text="Edit" />
+              <Button
+                data-testid="edit-schedule-button"
+                onClick={() => setIsEditingSchedule(true)}
+                text="Edit"
+              />
             )}
           </div>
         )}
