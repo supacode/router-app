@@ -2,13 +2,10 @@
 
 .route-item {
   margin-bottom: $spacing-40;
+  @include slideUp($spacing-2, 0.5s);
 
   &__icon {
     margin-right: $spacing-16;
-  }
-
-  &__details {
-    width: 100%;
   }
 
   &__estimate {

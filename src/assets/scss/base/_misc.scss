@@ -2,3 +2,20 @@
 $z-index-1: 1;
 $z-index-2: 2;
 $z-index-3: 3;
+
+// Utils
+
+@mixin slideUp($length, $duration) {
+  @keyframes slideUp {
+    0% {
+      transform: translateY($length);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  animation: slideUp $duration ease-in-out;
+}

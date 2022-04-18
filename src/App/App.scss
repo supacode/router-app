@@ -12,6 +12,7 @@ body {
   max-width: $app-container-width;
   margin: auto;
   background: $white;
+  box-shadow: 0 0 $spacing-20 rgba(0, 0, 0, 0.05);
   padding: $spacing-32;
 
   &__control {

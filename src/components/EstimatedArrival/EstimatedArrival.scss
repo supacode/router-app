@@ -2,6 +2,7 @@
 
 .arrival {
   width: 100%;
+  @include slideUp($spacing-4, 0.5s);
 
   &__title {
     font-weight: $font-weight-bold;

@@ -3,6 +3,7 @@
 .schedule-form {
   &__wrapper {
     width: 100%;
+    @include slideUp($spacing-4, 0.5s);
   }
 
   &__title {
@@ -17,7 +18,6 @@
 
     @media screen and (min-width: $screen-md-min) {
       flex-direction: row;
-      // background: red;
     }
 
     .input {
