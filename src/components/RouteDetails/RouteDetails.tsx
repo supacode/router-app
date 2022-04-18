@@ -1,6 +1,6 @@
-import type { Stop } from '../../types/Stop';
-import { RouteItem } from '../RouteItem';
-import { ScheduleStrategy } from '../../types/Schedule';
+import type { Stop } from 'types/Stop';
+import { RouteItem } from 'components/RouteItem';
+import { ScheduleStrategy } from 'types/Schedule';
 import './RouteDetails.scss';
 
 export type RouteDetailsProps = {

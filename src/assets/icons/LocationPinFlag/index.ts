@@ -1,0 +1,1 @@
+export { LocationPinFlag } from './LocationPinFlag';

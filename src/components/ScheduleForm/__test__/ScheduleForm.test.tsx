@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { ScheduleForm } from '../';
-import stops from '../../../mocks/stops.json';
-import schedules from '../../../mocks/schedules.json';
+import { ScheduleForm } from 'components/ScheduleForm';
+import stops from 'mocks/stops.json';
+import schedules from 'mocks/schedules.json';
 
 const mockFormProps = {
   formId: 'a',

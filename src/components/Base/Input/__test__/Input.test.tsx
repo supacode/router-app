@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { createRoot } from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
-import { Input, InputProps } from '../';
+import { Input, InputProps } from 'components/Base/Input';
 
 const mockProps: InputProps = {
   id: 'input-id',

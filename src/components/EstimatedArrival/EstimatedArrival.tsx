@@ -1,5 +1,5 @@
-import { Schedule } from '../../types/Schedule';
-import { dateTimeSeparator } from '../utils/dateTimeSeparator';
+import { Schedule } from 'types/Schedule';
+import { dateTimeSeparator } from 'utils/dateTimeSeparator';
 import './EstimatedArrival.scss';
 
 type EstimatedArrivalProps = {

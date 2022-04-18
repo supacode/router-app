@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import { createRoot } from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
-import { ToggleButton } from '../ToggleButton';
+import { ToggleButton } from 'components/Base/ToggleButton';
 
 const mockProps = {
   text: 'text',

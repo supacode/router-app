@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Button, ButtonProps } from '../';
+import { Button, ButtonProps } from 'components/Base/Button';
 
 const mockProps: ButtonProps = {
   text: 'Button',

@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { RouteItem } from '../';
-import { ScheduleStrategy } from '../../../types/Schedule';
-import stops from '../../../mocks/stops.json';
+import { RouteItem } from 'components/RouteItem';
+import { ScheduleStrategy } from 'types/Schedule';
+import stops from 'mocks/stops.json';
 
 const mockProps = {
   schedulingStrategy: ScheduleStrategy.Fixed,
@@ -13,7 +13,6 @@ const mockProps = {
 };
 
 beforeEach(() => {
-  // eslint-disable-next-line testing-library/no-render-in-setup
   render(<RouteItem {...mockProps} />);
 });
 

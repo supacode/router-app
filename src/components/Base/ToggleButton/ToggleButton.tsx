@@ -1,6 +1,6 @@
-import { MinusIcon } from '../../../assets/icons/MinusIcon/MinusIcon';
-import { PlusIcon } from '../../../assets/icons/PlusIcon/PlusIcon';
-import { Button } from '../Button';
+import { MinusIcon } from 'assets/icons/MinusIcon/MinusIcon';
+import { PlusIcon } from 'assets/icons/PlusIcon';
+import { Button } from 'components/Base/Button';
 import './ToggleButton.scss';
 
 type ToggleButtonProps = {

@@ -1,8 +1,8 @@
 import { memo } from 'react';
-import { LocationPinCount } from '../../assets/icons/LocationPinCount/LocationPinCount';
-import { LocationPinFlag } from '../../assets/icons/LocationPinFlag/LocationPinFlag';
-import type { Stop } from '../../types/Stop';
-import { dateTransformer } from '../utils/dateTransformer';
+import { LocationPinCount } from 'assets/icons/LocationPinCount/LocationPinCount';
+import { LocationPinFlag } from 'assets/icons/LocationPinFlag/LocationPinFlag';
+import type { Stop } from 'types/Stop';
+import { dateTransformer } from 'utils/dateTransformer';
 import './RouteItemHead.scss';
 
 type RouteItemHeadProps = {

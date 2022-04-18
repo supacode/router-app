@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import type { Stop } from '../../types/Stop';
-import { AddCargoForm } from '../AddCargoForm';
-import { ScheduleForm } from '../ScheduleForm';
-import { RouteItemHead } from '../RouteItemHead/RouteItemHead';
-import { Schedule, ScheduleStrategy } from '../../types/Schedule';
-import { dateTimeSeparator } from '../utils/dateTimeSeparator';
-import { EstimatedArrival } from '../EstimatedArrival';
-import { Button } from '../Base/Button';
-import { useScheduleFormStatus } from '../../hooks/useScheduleFormStatus';
-import { ToggleButton } from '../Base/ToggleButton';
+import type { Stop } from 'types/Stop';
+import { AddCargoForm } from 'components/AddCargoForm';
+import { ScheduleForm } from 'components/ScheduleForm';
+import { RouteItemHead } from 'components/RouteItemHead/RouteItemHead';
+import { Schedule, ScheduleStrategy } from 'types/Schedule';
+import { dateTimeSeparator } from 'utils/dateTimeSeparator';
+import { EstimatedArrival } from 'components/EstimatedArrival';
+import { Button } from 'components/Base/Button';
+import { useScheduleFormStatus } from 'hooks/useScheduleFormStatus';
+import { ToggleButton } from 'components/Base/ToggleButton';
 import './RouteItem.scss';
 
 type RouteItemProps = {

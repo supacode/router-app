@@ -1,4 +1,4 @@
-import { dateTransformer } from '../../dateTransformer';
+import { dateTransformer } from '..';
 
 describe('dateTransformer', () => {
   it('should insert colon between supported time formats', () => {

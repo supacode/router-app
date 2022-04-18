@@ -1,6 +1,6 @@
-import { Button } from '../Base/Button';
-import { Input } from '../Base/Input';
-import { Select } from '../Base/Select/Select';
+import { Button } from 'components/Base/Button';
+import { Input } from 'components/Base/Input';
+import { Select } from 'components/Base/Select/Select';
 import './AddCargoForm.scss';
 
 type AddCargoFormProps = {

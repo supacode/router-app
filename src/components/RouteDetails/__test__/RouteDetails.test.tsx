@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
 import { render, screen } from '@testing-library/react';
-import { RouteDetails, RouteDetailsProps } from '../';
-import { ScheduleStrategy } from '../../../types/Schedule';
-import stops from '../../../mocks/stops.json';
+import { RouteDetails, RouteDetailsProps } from 'components/RouteDetails';
+import { ScheduleStrategy } from 'types/Schedule';
+import stops from 'mocks/stops.json';
 
 const mockProps: RouteDetailsProps = {
   stops,

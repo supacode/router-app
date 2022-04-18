@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Stop } from '../../types/Stop';
-import { Schedule } from '../../types/Schedule';
-import { Input } from '../Base/Input';
-import { dateTimeSeparator } from '../utils/dateTimeSeparator';
-import { Button } from '../Base/Button';
+import { Stop } from 'types/Stop';
+import { Schedule } from 'types/Schedule';
+import { Input } from 'components/Base/Input';
+import { dateTimeSeparator } from 'utils/dateTimeSeparator';
+import { Button } from 'components/Base/Button';
 import './ScheduleForm.scss';
 
 type ScheduleFormProps = {

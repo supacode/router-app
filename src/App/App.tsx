@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { RouteDetails } from '../components/RouteDetails/RouteDetails';
-import { ScheduleStrategy } from '../types/Schedule';
-import stops from '../data/stops.json';
+import { RouteDetails } from 'components/RouteDetails/RouteDetails';
+import { ScheduleStrategy } from 'types/Schedule';
+import stops from 'data/stops.json';
 import './App.scss';
 
 export const App: React.FC = () => {
