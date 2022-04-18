@@ -7,7 +7,7 @@ import { Schedule, ScheduleStrategy } from '../../types/Schedule';
 import { dateTimeSeparator } from '../utils/dateTimeSeparator';
 import { EstimatedArrival } from '../EstimatedArrival';
 import { Button } from '../Base/Button';
-import { useScheduleFormStatus } from '../../hooks/useScheduleFormVisibility';
+import { useScheduleFormStatus } from '../../hooks/useScheduleFormStatus';
 import { ToggleButton } from '../Base/ToggleButton';
 import './RouteItem.scss';
 
@@ -68,7 +68,7 @@ export const RouteItem: React.FC<RouteItemProps> = ({
   });
 
   return (
-    <div className="route-item">
+    <article className="route-item">
       <div className="route-item__head">
         <RouteItemHead stop={stop} count={index + 1} isLastStop={isLastStop} />
 
@@ -114,7 +114,7 @@ export const RouteItem: React.FC<RouteItemProps> = ({
 
         {isAddingCargo && <AddCargoForm onCancel={onCargoFormCancel} />}
       </div>
-    </div>
+    </article>
   );
 };
 

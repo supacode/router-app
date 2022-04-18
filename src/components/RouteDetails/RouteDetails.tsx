@@ -1,10 +1,9 @@
-import React from 'react';
 import type { Stop } from '../../types/Stop';
 import { RouteItem } from '../RouteItem';
 import { ScheduleStrategy } from '../../types/Schedule';
 import './RouteDetails.scss';
 
-type RouteDetailsProps = {
+export type RouteDetailsProps = {
   stops: Stop[];
   schedulingStrategy: ScheduleStrategy;
   canAddCargo: boolean;

@@ -1,9 +1,11 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Button } from '../';
+import { Button, ButtonProps } from '../';
 
-const mockProps = {
+const mockProps: ButtonProps = {
   text: 'Button',
   onClick: jest.fn(),
+  type: 'button',
+  variant: 'primary',
 };
 
 describe('Button', () => {
@@ -12,9 +14,7 @@ describe('Button', () => {
   });
 
   it('should render a button', () => {
-    const { container } = render(
-      <Button {...mockProps} type="button" variant="primary" />,
-    );
+    const { container } = render(<Button {...mockProps} />);
 
     expect(container).toMatchSnapshot();
   });
@@ -41,14 +41,7 @@ describe('Button', () => {
   });
 
   it('should fire onClick callback', () => {
-    render(
-      <Button
-        {...mockProps}
-        variant="primary"
-        type="button"
-        onClick={mockProps.onClick}
-      />,
-    );
+    render(<Button {...mockProps} onClick={mockProps.onClick} />);
 
     const button = screen.getByRole('button', { name: /button/i });
 

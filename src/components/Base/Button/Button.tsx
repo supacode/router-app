@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import './Button.scss';
 
-type ButtonProps = {
+export type ButtonProps = {
   onClick?: () => void;
   className?: string;
   variant?: 'primary' | 'secondary' | 'tertiary';

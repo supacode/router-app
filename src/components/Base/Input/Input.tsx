@@ -1,8 +1,8 @@
-import React from 'react';
+import { memo } from 'react';
 import cn from 'classnames';
 import './Input.scss';
 
-type InputProps = {
+export type InputProps = {
   id: string;
   label?: string;
   className?: string;
@@ -71,6 +71,6 @@ const InputBase: React.FC<InputProps> = ({
   );
 };
 
-const memoized = React.memo(InputBase);
+const memoized = memo(InputBase);
 
 export { memoized as Input };

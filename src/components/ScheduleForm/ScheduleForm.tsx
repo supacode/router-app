@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Stop } from '../../types/Stop';
 import { Schedule } from '../../types/Schedule';
 import { Input } from '../Base/Input';

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-type useTestProps = {
+export type useScheduleFormProps = {
   isFixed: boolean;
   isFlexible: boolean;
   isFirstStop: boolean;
@@ -14,7 +14,7 @@ export const useScheduleFormStatus = ({
   isFlexible,
   isSemiFlexible,
   updateScheduleStatus,
-}: useTestProps) => {
+}: useScheduleFormProps) => {
   useEffect(() => {
     if (isFirstStop && (isFixed || isSemiFlexible)) {
       // For both flexible and semi-flexible, only the first stop can be updated
@@ -29,7 +29,7 @@ export const useScheduleFormStatus = ({
     } else {
       // Else the user can't update the form, so we set it to false,
       // if we don't, useEffect will run again without
-      // props change and canUpdateSchedule will be true,
+      // props change and updateScheduleStatus will be true,
       // that's why we don't set it to false by default.
 
       updateScheduleStatus(false);

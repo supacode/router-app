@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 import { LocationPinCount } from '../../assets/icons/LocationPinCount/LocationPinCount';
 import { LocationPinFlag } from '../../assets/icons/LocationPinFlag/LocationPinFlag';
 import type { Stop } from '../../types/Stop';
@@ -41,6 +41,6 @@ const RouteItemHead: React.FC<RouteItemHeadProps> = ({
   );
 };
 
-const memoized = React.memo(RouteItemHead);
+const memoized = memo(RouteItemHead);
 
 export { memoized as RouteItemHead };
