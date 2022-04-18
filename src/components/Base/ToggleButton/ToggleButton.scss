@@ -3,7 +3,6 @@
 .toggle-button {
   display: flex;
   align-items: center;
-  @include slideUp($spacing-2, 0.5s);
 
   &__icon {
     color: $accent-color;

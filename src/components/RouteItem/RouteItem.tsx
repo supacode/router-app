@@ -8,7 +8,7 @@ import { dateTimeSeparator } from '../utils/dateTimeSeparator';
 import { EstimatedArrival } from '../EstimatedArrival';
 import { Button } from '../Base/Button';
 import { useScheduleFormStatus } from '../../hooks/useScheduleFormVisibility';
-import { ToggleButton } from '../Base/ToggleButton/ToggleButton';
+import { ToggleButton } from '../Base/ToggleButton';
 import './RouteItem.scss';
 
 type RouteItemProps = {
