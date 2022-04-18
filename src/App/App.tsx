@@ -6,8 +6,8 @@ import './App.scss';
 
 export const App: React.FC = () => {
   const [schedulingStrategy, setSchedulingStrategy] =
-    useState<ScheduleStrategy>(ScheduleStrategy.Flexible);
-  const [canAddCargo, setCanAddCargo] = useState<boolean>(false);
+    useState<ScheduleStrategy>(ScheduleStrategy.Fixed);
+  const [canAddCargo, setCanAddCargo] = useState<boolean>(true);
 
   const schedulingStrategyHandler = (
     evt: React.ChangeEvent<HTMLSelectElement>,

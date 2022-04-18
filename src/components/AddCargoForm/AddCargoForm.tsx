@@ -1,30 +1,22 @@
-import { useCallback } from 'react';
 import { Button } from '../Base/Button';
 import { Input } from '../Base/Input';
 import { Select } from '../Base/Select/Select';
 import './AddCargoForm.scss';
 
 type AddCargoFormProps = {
-  cancelHandler?: () => void;
+  onCancel: () => void;
 };
 
-export const AddCargoForm: React.FC<AddCargoFormProps> = ({
-  cancelHandler,
-}) => {
-  const cancelHandlerCallback = useCallback(() => {
-    cancelHandler && cancelHandler();
-  }, [cancelHandler]);
+export const AddCargoForm: React.FC<AddCargoFormProps> = ({ onCancel }) => {
+  const onSubmitHandler = (evt: any) => {
+    evt.preventDefault();
+    // Out of scope
 
-  const onSubmitHandler = useCallback(
-    (evt: React.FormEvent<HTMLFormElement>) => {
-      evt.preventDefault();
-      // Out of scope
-    },
-    [],
-  );
+    console.log(evt);
+  };
 
   return (
-    <form className="form" onSubmit={(e) => onSubmitHandler}>
+    <form className="form" onSubmit={onSubmitHandler}>
       <legend className="form__title">Cargo Item</legend>
 
       <div className="form__form-group form__form-group--first-row">
@@ -57,15 +49,16 @@ export const AddCargoForm: React.FC<AddCargoFormProps> = ({
         <Button
           variant="tertiary"
           className="form__btn"
+          type="button"
+          onClick={onCancel}
           text="Cancel"
-          onClick={cancelHandlerCallback}
         />
 
         <Button
           variant="primary"
+          type="submit"
           text="Save"
           className="form__btn form__cta"
-          onClick={cancelHandlerCallback}
         />
       </div>
     </form>

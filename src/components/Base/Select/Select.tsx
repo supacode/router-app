@@ -3,7 +3,7 @@ import './Select.scss';
 type SelectProps = {
   id: string;
   label?: string;
-  onChangeHandler?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  onChangeHandler?: (evt: React.ChangeEvent<HTMLSelectElement>) => void;
   children: React.ReactNode;
 };
 

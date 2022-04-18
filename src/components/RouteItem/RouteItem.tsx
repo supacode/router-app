@@ -42,7 +42,7 @@ export const RouteItem: React.FC<RouteItemProps> = ({
 
   // Toggle schedule form visibility on button toggle
   const setIsAddingCargoHandler = () => {
-    setIsAddingCargo(!isAddingCargo);
+    setIsAddingCargo(true);
   };
 
   const onScheduleFormSave = (schedule: Schedule) => {
@@ -52,6 +52,10 @@ export const RouteItem: React.FC<RouteItemProps> = ({
 
   const onScheduleFormCancel = () => {
     setIsEditingSchedule(false);
+  };
+
+  const onCargoFormCancel = () => {
+    setIsAddingCargo(false);
   };
 
   // Custom hook that handles logic for schedule form visibility,
@@ -98,17 +102,17 @@ export const RouteItem: React.FC<RouteItemProps> = ({
       </div>
 
       <div className="route-item__details">
-        {canAddCargo && (
-          <ToggleButton
-            onClick={setIsAddingCargoHandler}
-            isActive={!isAddingCargo}
-            text={'Ladung hinzufügen'}
-          />
+        {canAddCargo && !isAddingCargo && (
+          <div className="toggle-button__wrapper">
+            <ToggleButton
+              onClick={setIsAddingCargoHandler}
+              isActive={!isAddingCargo}
+              text={'Ladung hinzufügen'}
+            />
+          </div>
         )}
 
-        {isAddingCargo && (
-          <AddCargoForm cancelHandler={setIsAddingCargoHandler} />
-        )}
+        {isAddingCargo && <AddCargoForm onCancel={onCargoFormCancel} />}
       </div>
     </div>
   );

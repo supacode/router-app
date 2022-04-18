@@ -2,6 +2,8 @@
 
 .route-item {
   margin-bottom: $spacing-40;
+  border-bottom: 1px solid $grey-light;
+
   @include slideUp($spacing-2, 0.5s);
 
   &__icon {
@@ -27,7 +29,6 @@
     display: flex;
     margin-top: $spacing-16;
     color: $accent-color;
-    font-weight: 450;
     font-size: $spacing-16;
     align-items: center;
     width: 100%;
@@ -38,15 +39,16 @@
       position: relative;
       z-index: $z-index-1;
     }
+  }
 
-    &::after {
-      content: '';
-      background: $grey-light;
-      pointer-events: none;
-      width: 80%;
-      height: 1px;
-      right: 0;
-      position: absolute;
+  .toggle-button__wrapper {
+    margin: $spacing-12 0;
+    .toggle-button {
+      width: max-content;
+      background: $white;
+      position: relative;
+      z-index: $z-index-2;
+      padding-right: $spacing-14;
     }
   }
 }

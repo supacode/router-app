@@ -3,9 +3,8 @@
 .form {
   display: flex;
   animation: slideUp 0.4s ease-out;
-  border: 1px solid $grey-light;
+  border-top: 1px solid $grey-light;
   border-width: 1px 0;
-  padding-bottom: $spacing-16;
   flex-direction: column;
   margin: $spacing-32 0;
 
@@ -55,7 +54,7 @@
   }
 
   &__separator {
-    background: $grey-light;
+    backgr-tpborder-topound: $grey-light;
     width: 1px;
     display: none;
 
@@ -69,14 +68,14 @@
     justify-content: flex-end;
     align-self: flex-end;
     background: $white;
-    margin-bottom: -$spacing-32;
+    margin-bottom: -$spacing-40;
   }
 
   &__btn {
     margin-left: $spacing-32;
     font-weight: $font-weight-bold;
     color: $grey;
-    font-size: $spacing-16;
+    font-size: $font-weight-normal;
     padding: $spacing-4 0;
   }
 
