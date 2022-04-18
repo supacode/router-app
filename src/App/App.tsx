@@ -17,7 +17,7 @@ export const App: React.FC = () => {
     setSchedulingStrategy(selectedStrategy);
   };
 
-  const canAddCargoHandler = (evt: React.ChangeEvent<HTMLInputElement>) => {
+  const canAddCargoHandler = () => {
     setCanAddCargo(!canAddCargo);
   };
 

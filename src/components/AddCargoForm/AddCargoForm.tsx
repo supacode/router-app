@@ -8,11 +8,9 @@ type AddCargoFormProps = {
 };
 
 export const AddCargoForm: React.FC<AddCargoFormProps> = ({ onCancel }) => {
-  const onSubmitHandler = (evt: any) => {
+  const onSubmitHandler = (evt: React.FormEvent) => {
     evt.preventDefault();
     // Out of scope
-
-    console.log(evt);
   };
 
   return (
