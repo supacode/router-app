@@ -11,7 +11,7 @@ import { useScheduleFormStatus } from 'hooks/useScheduleFormStatus';
 import { ToggleButton } from 'components/Base/ToggleButton';
 import './RouteItem.scss';
 
-type RouteItemProps = {
+export type RouteItemProps = {
   stop: Stop;
   isLastStop: boolean;
   index: number;
