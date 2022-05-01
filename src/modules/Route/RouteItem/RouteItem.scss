@@ -1,0 +1,54 @@
+@import '../../../assets/scss/variables';
+
+.route-item {
+  margin-bottom: $spacing-40;
+  border-bottom: 1px solid $grey-light;
+
+  @include slideUp($spacing-2, 0.5s);
+
+  &__icon {
+    margin-right: $spacing-16;
+  }
+
+  &__estimate {
+    width: 100%;
+    margin-top: -$spacing-10;
+    align-self: flex-start;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $screen-lg-min) {
+      flex-direction: row;
+    }
+  }
+
+  &__cargo-cta {
+    display: flex;
+    margin-top: $spacing-16;
+    color: $accent-color;
+    font-size: $spacing-16;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    &--text {
+      border-bottom: 1px solid $accent-color;
+      position: relative;
+      z-index: $z-index-1;
+    }
+  }
+
+  .toggle-button__wrapper {
+    margin: $spacing-12 0;
+    .toggle-button {
+      width: max-content;
+      background: $white;
+      position: relative;
+      z-index: $z-index-2;
+      padding-right: $spacing-14;
+    }
+  }
+}

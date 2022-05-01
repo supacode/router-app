@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { RouteDetails } from 'components/RouteDetails/RouteDetails';
+import { RouteDetails } from 'modules/Route/RouteDetails';
 import { ScheduleStrategy } from 'types/Schedule';
 import stops from 'data/stops.json';
 import './App.scss';
