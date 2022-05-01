@@ -28,7 +28,7 @@ Users can select the date and time for all the stops when using the flexible sch
 
 We allow some Users to add cargo items per stop. This flag can be combined with any scheduling strategy.
 
-When a customer can add cargo items, an “Add cargo” button is shown below every stop.
+When a user can add cargo items, an “Add cargo” button is shown below every stop.
 
 ![img](img/flexible-can-add-cargo.png)
 
