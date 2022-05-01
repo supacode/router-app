@@ -3,8 +3,6 @@ FROM node:17-alpine
 #set working directory
 WORKDIR /app
 
-ENV PATH /app/node_modules/.bin:$PATH
-
 # add app
 COPY . .
 
