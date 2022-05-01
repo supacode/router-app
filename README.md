@@ -1,8 +1,8 @@
-# Route Display Information
+# Route Information
 
 ## Background
 
-Stops are predefined and we propose a schedule to the user. Depending on the schedule strategy, users are able to override parts of it.
+The app displays stops for a delivery truck. Stops are predefined and we propose a schedule to the user. Depending on the schedule strategy, users are able to override parts of it.
 
 ### Scheduling strategy
 
