@@ -86,8 +86,6 @@ export const RouteItem: React.FC<RouteItemProps> = ({
               isSemiFlexible={isSemiFlexible}
               onFormSubmit={onScheduleFormSave}
             />
-
-            <ToggleButton isActive={true} text="Gate Referenz" />
           </div>
         ) : (
           /* If the user is not editing the form, then we should show the schedule details */
