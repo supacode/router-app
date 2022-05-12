@@ -1,19 +1,24 @@
-import { memo } from 'react';
 import { LocationPinCount } from 'assets/icons/LocationPinCount/LocationPinCount';
 import { LocationPinFlag } from 'assets/icons/LocationPinFlag/LocationPinFlag';
 import type { Stop } from 'types/Stop';
-import { dateTransformer } from 'utils/dateTransformer';
 import './RouteItemHead.scss';
 
 type RouteItemHeadProps = {
   stop: Stop;
+  address: string;
+  company: string;
   count: number | string;
+  openingHours: string;
+  closingHours: string;
   isLastStop: boolean;
 };
 
-const RouteItemHead: React.FC<RouteItemHeadProps> = ({
-  stop,
+export const RouteItemHead: React.FC<RouteItemHeadProps> = ({
   count,
+  address,
+  closingHours,
+  openingHours,
+  company,
   isLastStop,
 }) => {
   return (
@@ -23,24 +28,20 @@ const RouteItemHead: React.FC<RouteItemHeadProps> = ({
       </span>
 
       <div className="route-item-head__details">
-        <h3 className="route-item-head__name">{stop.address}</h3>
-        <p className="route-item-head__address">{stop.company}</p>
+        <h3 className="route-item-head__name">{address}</h3>
+        <p className="route-item-head__address">{company}</p>
 
         <p className="route-item-head__opening">
           <span className="route-item-head__opening--label">
             Opening Hours:{' '}
           </span>
           <span className="route-item-head__opening--value">
-            {dateTransformer(stop.openingHours.from)}
+            {openingHours}
             {'-'}
-            {dateTransformer(stop.openingHours.to)}
+            {closingHours}
           </span>
         </p>
       </div>
     </div>
   );
 };
-
-const memoized = memo(RouteItemHead);
-
-export { memoized as RouteItemHead };

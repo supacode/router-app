@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import type { Stop } from 'types/Stop';
+import { dateTransformer } from 'utils/dateTransformer';
 import { AddCargoForm } from 'modules/Cargo/AddCargoForm';
 import { RouteScheduleForm } from 'modules/Route/RouteScheduleForm';
 import { RouteItemHead } from 'modules/Route/RouteItemHead';
@@ -32,7 +33,7 @@ export const RouteItem: React.FC<RouteItemProps> = ({
   const isFirstStop = index === 0;
   const [isAddingCargo, setIsAddingCargo] = useState<boolean>(false); // track cargo adding form visibility
   const [isEditingSchedule, setIsEditingSchedule] = useState<boolean>(false); // track schedule editing form status
-  const [canUpdateSchedule, setCanUpdateSchedule] = useState<boolean>(false); // track schedule editing form status
+  const [canUpdateSchedule, setCanUpdateSchedule] = useState<boolean>(false); // track schedule editing ability status
 
   const [schedule, setSchedule] = useState<Schedule>({
     arrivalDate: dateTimeSeparator(stop.schedule.end).date,
@@ -70,7 +71,15 @@ export const RouteItem: React.FC<RouteItemProps> = ({
   return (
     <article className="route-item">
       <div className="route-item__head">
-        <RouteItemHead stop={stop} count={index + 1} isLastStop={isLastStop} />
+        <RouteItemHead
+          stop={stop}
+          count={index + 1}
+          address={stop.address}
+          company={stop.company}
+          closingHours={dateTransformer(stop.openingHours.to)}
+          openingHours={dateTransformer(stop.openingHours.from)}
+          isLastStop={isLastStop}
+        />
 
         {canUpdateSchedule && isEditingSchedule ? (
           <div className="schedule-form__wrapper">
