@@ -32,6 +32,9 @@ When a user can add cargo items, an “Add cargo” button is shown below every 
 
 ![img](img/flexible-can-add-cargo.png)
 
+
+## Preview
+https://main--softspoken-tiger.netlify.app/
 Clicking on the button shows a form.
 
 ![img](img/flexible-can-add-cargo-form.png)
