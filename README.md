@@ -33,8 +33,6 @@ When a user can add cargo items, an “Add cargo” button is shown below every 
 ![img](img/flexible-can-add-cargo.png)
 
 
-## Preview
-https://main--softspoken-tiger.netlify.app/
 Clicking on the button shows a form.
 
 ![img](img/flexible-can-add-cargo-form.png)
@@ -50,3 +48,7 @@ Cancelling closes the form. Saving is out of scope.
 - Clicking on "Add cargo" shows a form
 - Cancelling on the cargo form hides the form
 - Saving the cargo form is out of scope
+
+
+## Preview
+https://main--softspoken-tiger.netlify.app/
